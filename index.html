@@ -3,16 +3,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>انتخاب سرور VPN</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       font-family: sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      padding: 16px;
+    }
+    a.server-link {
+      display: block;
+      width: 192px;
+      padding: 12px 0;
+      background-color: #2563eb;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    a.server-link:hover,
+    a.server-link:focus {
+      background-color: #1e40af;
+      outline: none;
+    }
+    @media (max-width: 480px) {
+      a.server-link {
+        width: 100%;
+      }
     }
   </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center space-y-4 p-4">
-  <a href="https://vpn.example.com/server1" class="server-link bg-blue-600 text-white py-3 px-8 rounded-md w-48 text-center block no-underline hover:bg-blue-700">سرور یک</a>
-  <a href="https://vpn.example.com/server2" class="server-link bg-blue-600 text-white py-3 px-8 rounded-md w-48 text-center block no-underline hover:bg-blue-700">سرور دو</a>
-  <a href="https://vpn.example.com/server3" class="server-link bg-blue-600 text-white py-3 px-8 rounded-md w-48 text-center block no-underline hover:bg-blue-700">سرور سه</a>
+<body>
+  <a href="https://vpn.example.com/server1" class="server-link">سرور یک</a>
+  <a href="https://vpn.example.com/server2" class="server-link">سرور دو</a>
+  <a href="https://vpn.example.com/server3" class="server-link">سرور سه</a>
 </body>
 </html>
