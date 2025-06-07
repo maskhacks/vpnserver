@@ -1,11 +1,22 @@
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>انتخاب سرور VPN</title>
   <style>
+    @font-face {
+      font-family: 'Vazir';
+      src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot');
+      src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+           url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff') format('woff'),
+           url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
     body {
-      font-family: sans-serif;
+      font-family: 'Vazir', Tahoma, sans-serif;
       background-color: #f3f4f6;
       margin: 0;
       height: 100vh;
@@ -16,6 +27,7 @@
       gap: 16px;
       padding: 16px;
     }
+    
     a.server-link {
       display: block;
       width: 192px;
@@ -29,12 +41,15 @@
       font-weight: 600;
       transition: background-color 0.3s ease;
       user-select: none;
+      font-family: 'Vazir', Tahoma, sans-serif;
     }
+    
     a.server-link:hover,
     a.server-link:focus {
       background-color: #1e40af;
       outline: none;
     }
+    
     @media (max-width: 480px) {
       a.server-link {
         width: 100%;
@@ -43,8 +58,9 @@
   </style>
 </head>
 <body>
-  <a href="https://vpn.example.com/server1.ovpn" class="server-link">سرور یک</a>
-  <a href="https://vpn.example.com/server2.ovpn" class="server-link">سرور دو</a>
-  <a href="https://vpn.example.com/server3.ovpn" class="server-link">سرور سه</a>
+  <a href="https://vpn.example.com/server1.ovpn" class="server-link">سرور یک 🇮🇷</a>
+  <a href="https://vpn.example.com/server2.ovpn" class="server-link">سرور دو 🇺🇸</a>
+  <a href="https://vpn.example.com/server3.ovpn" class="server-link">سرور سه 🇩🇪</a>
+  <a href="https://vpn.example.com/server3.ovpn" class="server-link">سرور چهارم DE</a>
 </body>
 </html>
